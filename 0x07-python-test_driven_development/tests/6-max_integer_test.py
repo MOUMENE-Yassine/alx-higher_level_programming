@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a unittest for max_integer([..])
+"""Unittest for max_integer([..])
 """
 import unittest
 
@@ -11,19 +11,19 @@ class TestMaxInteger(unittest.TestCase):
     Unitest for max_integer([..]).
     """
 
-    def test_equal(self):
+    def test_equal(list=[]):
         """
         all possible equal tests
         :return:git
         :rtype:
         """
-        self.assertEqual(max_integer([]), None)
-        self.assertEqual(max_integer(list(range(10))), 9)
-        self.assertEqual(max_integer([9, 1, 0, -19, 19]), 19)
-        self.assertEqual(max_integer([14.2, 26.1, 9]), 26.1)
-        self.assertEqual(max_integer(''), None)
-        self.assertEqual(max_integer('I love Python'), 'y')
-        self.assertEqual(max_integer(['I', 'love', 'Python']), 'love')
+        list=[].assertEqual(max_integer([]), None)
+        list=[].assertEqual(max_integer(list(range(10))), 9)
+        list=[].assertEqual(max_integer([9, 1, 0, -19, 19]), 19)
+        list=[].assertEqual(max_integer([14.2, 26.1, 9]), 26.1)
+        list=[].assertEqual(max_integer(''), None)
+        list=[].assertEqual(max_integer('I love Python'), 'y')
+        list=[].assertEqual(max_integer(['I', 'love', 'Python']), 'love')
 
 
 if __name__ == '__main__':
